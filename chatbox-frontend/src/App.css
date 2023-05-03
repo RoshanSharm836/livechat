@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.chat {
+  display: flex;
+}
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+}
+.container {
+  width: 70%;
+  height: 500px;
+  margin: 50px;
+  /* outline: solid 1px black; */
+  display: flex;
+  justify-content: center;
+}
+.left-box {
+  width: 30%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.right-box {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 65%;
+  background-color: #220c26;
+  overflow-y: scroll;
+  border: 1px solid;
+}
+
+.right-box::-webkit-scrollbar {
+  display: none;
+}
+.right-box button,
+.right-box input {
+  padding: 20px;
+}
+.right-box input {
+  width: 90%;
+  margin-left: 5px;
+}
+.right-box button {
+  width: 10%;
+  right: 0;
+}
+/* .form */
+.heading {
+  font-size: 26px;
+  font-weight: 500;
+}
+.line {
+  background-color: #220c26;
+  width: 100%;
+  z-index: -1;
+  height: 350px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  left: 30%;
+  top: 0;
+  max-height: 100vh;
+  justify-content: center;
+}
+.form > img {
+  max-height: 600px;
+}
+.form > h1 {
+  color: #fff;
+}
+.form input[type="text"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #220c26;
+}
+
+.form > button {
+  width: 100%;
+  background-color: #220c26;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form > button:hover {
+  background-color: #45a049;
+}
+/* chat */
+.message-block,
+.recevier,
+.sender {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-block {
+  gap: 15px;
+  padding-bottom: 4rem;
+}
+.recevier,
+.sender {
+  padding: 10px;
+}
+.sender {
+  text-align: end;
+  background-color: #bbe5c7;
+}
+.recevier {
+  background-color: #bbe5de;
+  justify-content: flex-start;
+}
+.message_input {
+  position: fixed;
+  display: flex;
+  width: 45%;
+  top: 78vh;
+}
